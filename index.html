@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VACTI | Self-hosted AI Pentest, VA and Threat Intelligence</title>
-  <meta name="description" content="VACTI is a self-hosted, autonomous AI-driven platform for penetration testing, vulnerability assessment, and cyber threat intelligence. One control plane joins VA scans, agentic deep pentest across web, API, mobile, desktop, and CVE targets, bug-bounty workflows, CTF solving, and leak intelligence on infrastructure you own." />
+  <title>VACTI | Autonomous Offensive Security, Self-hosted</title>
+  <meta name="description" content="VACTI is a self-hosted, autonomous offensive security platform. One control plane runs evidence-grade AI penetration testing, vulnerability assessment, and cyber threat intelligence across web, API, infrastructure, mobile, and desktop, on infrastructure you own." />
   <meta name="color-scheme" content="light" />
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
-  <meta property="og:title" content="VACTI | Self-hosted AI Pentest, VA and Threat Intelligence" />
-  <meta property="og:description" content="Autonomous AI-driven pentest, vulnerability assessment, and cyber threat intelligence. Self-hosted, multi-modality, oracle-gated evidence. Your engagement data never leaves your infrastructure." />
+  <meta property="og:title" content="VACTI | Autonomous Offensive Security, Self-hosted" />
+  <meta property="og:description" content="Evidence-grade AI penetration testing, vulnerability assessment, and threat intelligence. Self-hosted, oracle-gated, one data plane. Your engagement data never leaves your infrastructure." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,10 +28,10 @@
         <a href="#how">How it works</a>
         <a href="#platform">Platform</a>
         <a href="#coverage">Coverage</a>
+        <a href="#why">Why VACTI</a>
         <a href="#architecture">Architecture</a>
-        <a href="#repos">Repositories</a>
       </nav>
-      <a class="btn btn-sm btn-primary" href="https://github.com/anggipradana/vacti">GitHub</a>
+      <a class="btn btn-sm btn-primary" href="#platform">Explore the platform</a>
     </div>
   </header>
 
@@ -39,26 +39,24 @@
     <!-- HERO -->
     <section class="hero">
       <div class="wrap hero-inner">
-        <img class="hero-logo" src="assets/logo.svg" alt="VACTI logo" width="88" height="97" />
+        <img class="hero-logo" src="assets/logo.svg" alt="VACTI logo" width="104" height="114" />
+        <p class="hero-kicker">Offensive security platform</p>
         <h1 class="hero-title">VACTI</h1>
-        <p class="hero-tag">
-          Autonomous AI-driven penetration testing, vulnerability assessment, and cyber
-          threat intelligence. Self-hosted. Multi-modality.
-        </p>
+        <p class="hero-tag">Autonomous offensive security, self-hosted.</p>
         <p class="hero-sub">
-          From network and web vulnerability scanning to agentic deep pentest, mobile
-          instrumentation, bug-bounty workflows, and CTF solving: one platform, one data
-          plane, on infrastructure you own.
+          VACTI runs evidence-grade penetration testing, vulnerability assessment, and cyber threat
+          intelligence across your entire attack surface, from web and API to infrastructure, mobile,
+          and desktop, on infrastructure you own and control.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#how">See how it works</a>
-          <a class="btn btn-ghost" href="#repos">Browse the repositories</a>
+          <a class="btn btn-ghost" href="#platform">Explore the platform</a>
         </div>
         <ul class="hero-stats" aria-label="At a glance">
           <li><strong>7</strong><span>engagement verticals</span></li>
           <li><strong>3 layers</strong><span>swarm, prober, verifier</span></li>
-          <li><strong>amd64 + arm64</strong><span>multi-arch engine</span></li>
-          <li><strong>Self-hosted</strong><span>runs on your infrastructure</span></li>
+          <li><strong>Oracle-gated</strong><span>proven, not guessed</span></li>
+          <li><strong>Self-hosted</strong><span>runs on infrastructure you own</span></li>
         </ul>
       </div>
     </section>
@@ -67,58 +65,77 @@
     <section id="how" class="section">
       <div class="wrap">
         <p class="eyebrow">How it works</p>
-        <h2 class="section-title">One platform, from first scan to verified report</h2>
+        <h2 class="section-title">The engagement lifecycle, end to end</h2>
         <p class="section-lead">
-          A self-hosted control plane holds the data, the console, and the methodology. A fleet
-          of engines does the testing. The two talk over a one-way pull link, engine outbound only.
+          Every engagement follows the same disciplined path: scoped, tested autonomously, proven by an
+          oracle, and delivered as evidence. A self-hosted control plane holds the data and the
+          methodology; a fleet of engines does the testing over an outbound-only link.
         </p>
-        <ol class="steps">
-          <li class="step">
-            <div class="step-ico" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2.4"/><path d="M16 40h16M24 34v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M8 18h32" stroke="currentColor" stroke-width="2.4"/></svg>
+        <ol class="flow">
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l16 7v9c0 10-7 15-16 20C15 37 8 32 8 22v-9z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M17 24l5 5 10-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <span class="step-num">01</span>
-            <h3>Stand up the control plane</h3>
+            <span class="flow-num">01</span>
+            <h3>Scope the engagement</h3>
             <p>
-              Three lightweight services (app, worker, PostgreSQL) run end-to-end in TypeScript, with
-              no Redis and no Celery. You get multi-project workspaces, server-side RBAC, an encrypted
-              API-key vault, audit logging, and a typed REST API.
+              Define in-scope targets, per-role test accounts, and context, then pick a vertical and the
+              run knobs: stealth for WAF-fronted targets, a time budget, and prober depth.
             </p>
           </li>
-          <li class="step">
-            <div class="step-ico" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none"><circle cx="21" cy="21" r="12" stroke="currentColor" stroke-width="2.4"/><path d="M30 30l9 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="21" cy="21" r="13" stroke="currentColor" stroke-width="2.4"/><path d="M31 31l9 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
             </div>
-            <span class="step-num">02</span>
-            <h3>Scan, map, and watch</h3>
+            <span class="flow-num">02</span>
+            <h3>Recon and crawl</h3>
             <p>
-              Run the recon pipeline, map the passive attack surface with a 23-rule exposure detector,
-              look up breach and stealer leaks, and track a unified threat-intelligence risk score that
-              is identical across the dashboard, the TI page, and the reports.
+              The surface is mapped end to end: the recon pipeline, route and JS-bundle extraction, and
+              live proxy flow capture build a deterministic inventory of every route and parameter.
             </p>
           </li>
-          <li class="step">
-            <div class="step-ico" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.4"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2.4"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="10" r="4" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="34" r="4" stroke="currentColor" stroke-width="2.4"/><circle cx="36" cy="34" r="4" stroke="currentColor" stroke-width="2.4"/><path d="M22 14l-8 16M26 14l8 16M16 34h16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
             </div>
-            <span class="step-num">03</span>
-            <h3>Run an agentic engagement</h3>
+            <span class="flow-num">03</span>
+            <h3>Autonomous orchestration</h3>
             <p>
-              Enroll an engine with a single-use token, pick a vertical (web, infra, mobile and iOS,
-              desktop, source white-box, CTF, or web3), and let an agent swarm, a deterministic prober,
-              and a QA-verifier pass test the scope at full depth.
+              An agent swarm drives a real browser and tool arsenal through the proxy, testing every
+              route against every applicable class at full depth and creating candidate findings.
             </p>
           </li>
-          <li class="step">
-            <div class="step-ico" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none"><path d="M13 6h15l8 8v28H13z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M28 6v8h8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M18 27l3.5 3.5L30 22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="2.4"/><path d="M17 24l5 5 10-12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
-            <span class="step-num">04</span>
-            <h3>Triage, prove, report</h3>
+            <span class="flow-num">04</span>
+            <h3>Oracle-gated verification</h3>
             <p>
-              Every finding is gated by a class-specific oracle and ships with verbatim Caido evidence,
-              screenshots, and a re-executed proof. Deliver a bilingual PDF, SARIF and XLSX exports, a
-              re-importable Caido project, and draft bug-bounty submissions.
+              A deterministic prober confirms the baseline exploitation floor, then a QA-verifier
+              refutes and reproduces each candidate step by step before it is ever accepted.
+            </p>
+          </li>
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="12" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2.4"/><circle cx="24" cy="23" r="5" stroke="currentColor" stroke-width="2.4"/><path d="M18 12l3-4h6l3 4" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="flow-num">05</span>
+            <h3>Evidence capture</h3>
+            <p>
+              Every finding ships with verbatim request and response bytes re-fetched from the proxy,
+              browser screenshots, and a re-executed proof, never text typed by the model.
+            </p>
+          </li>
+          <li class="flow-step">
+            <div class="flow-ico" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M13 6h15l8 8v28H13z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M28 6v8h8" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M18 30c4-6 8-6 12 0" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M27 28l3 2-1 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="flow-num">06</span>
+            <h3>Report and retest</h3>
+            <p>
+              Deliver a bilingual PDF with SARIF and XLSX exports, a re-importable proxy project, and
+              draft submissions. Re-queue any engagement to continue, deepen, or re-validate.
             </p>
           </li>
         </ol>
@@ -128,47 +145,62 @@
     <!-- PLATFORM PILLARS -->
     <section id="platform" class="section section-alt">
       <div class="wrap">
-        <p class="eyebrow">What we do</p>
-        <h2 class="section-title">A full offensive and intelligence platform</h2>
+        <p class="eyebrow">The platform</p>
+        <h2 class="section-title">Four pillars, one console, one data plane</h2>
         <p class="section-lead">
-          VACTI is not a single scanner. It joins vulnerability assessment, agentic penetration
-          testing, threat intelligence, bug-bounty workflows, and CTF solving under one console and
-          one data plane.
+          VACTI is not a single scanner. It joins autonomous penetration testing, vulnerability
+          assessment and threat intelligence, bug-bounty and CTF workflows, and mobile and desktop
+          testing under one control plane and one shared data model.
         </p>
         <div class="pillars">
           <article class="pillar">
             <h3><span class="card-dot"></span>AI penetration testing</h3>
-            <p>
-              An agentic harness pairs a Claude Code swarm with a deterministic prober and a QA-verifier
-              pass. It tests web, API, mobile, desktop, source, and CVE targets end to end, gates each
-              finding behind a class-specific oracle, captures verbatim evidence through a Caido proxy,
-              and supports one-click retest and continue.
+            <p class="pillar-hook">
+              An autonomous agent swarm that tests like an operator, then proves every finding before it
+              reaches your triage.
             </p>
+            <ul class="pillar-list">
+              <li>A producer swarm drives a real browser and tool arsenal through a proxy across web, API, source white-box, and CVE targets at full depth.</li>
+              <li>A deterministic prober confirms the baseline injection and service points independent of the model, so coverage is consistent run to run.</li>
+              <li>A QA-verifier re-tests each candidate and runs a refutation gate on critical and high findings, accepting only what it reproduces.</li>
+              <li>Continue, deepen, and re-validate resume an engagement exactly where the last run stopped.</li>
+            </ul>
           </article>
           <article class="pillar">
             <h3><span class="card-dot"></span>Vulnerability assessment and threat intelligence</h3>
-            <p>
-              A straight recon pipeline (subfinder, httpx, naabu, nuclei), passive OSINT surface mapping
-              with a 23-rule exposure detector, breach and stealer leak intelligence, and authoritative
-              CVE and threat-feed consumption, all rolling up into one risk score shared across
-              dashboards and reports.
+            <p class="pillar-hook">
+              Map the surface, score the risk, and watch the exposure, from one recon pipeline and one
+              risk model.
             </p>
+            <ul class="pillar-list">
+              <li>A straight recon pipeline over all-Go scanners, with per-finding CVSS, CVE, and references and an AI-enriched triage workflow.</li>
+              <li>Passive OSINT surface mapping with a 23-rule exposure detector for leaked keys, tokens, private keys, database URLs, and stealer credentials.</li>
+              <li>Breach and stealer leak lookup across datasets, treated as confidential and masked by default.</li>
+              <li>A unified risk score over threat feeds, leak intelligence, and sector news, identical across the dashboard and every report.</li>
+            </ul>
           </article>
           <article class="pillar">
             <h3><span class="card-dot"></span>Bug bounty and CTF</h3>
-            <p>
-              Draft and manage HackerOne and Bugcrowd submissions with human-in-the-loop approval and
-              advisory dedup to prevent duplicates. Solve CTF challenges through a flag-graded engagement
-              kind that mixes web and infrastructure classes with dedicated CTF methodology.
+            <p class="pillar-hook">
+              Take a confirmed finding straight to a submission, or point the same engine at a flag.
             </p>
+            <ul class="pillar-list">
+              <li>Draft and manage HackerOne and Bugcrowd submissions, with token-less drafting built in.</li>
+              <li>Human-in-the-loop approval is database-locked with advisory dedup to stop duplicate submissions.</li>
+              <li>A flag-graded CTF engagement mixes web and infrastructure classes with dedicated CTF methodology.</li>
+            </ul>
           </article>
           <article class="pillar">
             <h3><span class="card-dot"></span>Mobile and desktop</h3>
-            <p>
-              Android and iOS engagements drive the real app on a paired device and reuse the backend
-              authorization and IDOR probers, with SSL-pinning and anti-instrumentation handling.
-              Desktop covers thick-client and native-app assessment plus the services the client calls.
+            <p class="pillar-hook">
+              Drive the real app on a real device, then test the backend it talks to.
             </p>
+            <ul class="pillar-list">
+              <li>Android and iOS engagements run a managed app agent that drives the app on a paired device.</li>
+              <li>SSL-pinning and anti-instrumentation handling keep the session live against hardened apps.</li>
+              <li>Desktop thick-client and native-app assessment covers the binary and the services it calls.</li>
+              <li>Both reuse the authorization and IDOR probers against the backend API, so mobile findings carry the same proof.</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -178,125 +210,105 @@
     <section id="coverage" class="section">
       <div class="wrap">
         <p class="eyebrow">Coverage</p>
-        <h2 class="section-title">A floor of oracle-gated coverage, a ceiling of agent depth</h2>
+        <h2 class="section-title">The vulnerability classes we confirm</h2>
         <p class="section-lead">
-          The deterministic prober is a family of oracle-gated floors: a finding is emitted only when a
-          class-specific oracle proves exploitation. The agent swarm then exploits, scopes impact, and
-          chains it. Coverage is organised by domain, not by individual test.
+          Coverage is organised by domain, not by individual test. Each class is gated by its own
+          confirmation oracle: a finding is emitted only when exploitation is proven, then the swarm
+          exploits it, scopes the impact, and chains it.
         </p>
-        <div class="cards">
-          <article class="card">
+        <div class="cov-grid">
+          <article class="cov-group">
             <h3><span class="card-dot"></span>Web and API</h3>
-            <p>
-              SQL injection, cross-site scripting (reflected, stored, and DOM), SSRF, IDOR and
-              BOLA/BFLA, authentication bypass, LFI, upload-to-execution, SSTI, XXE, prototype pollution,
-              GraphQL, CORS, deserialization, NoSQLi, open redirect, mass assignment, host-header
-              injection, and business-logic abuse across payment, OAuth, and race-condition flows.
-            </p>
+            <ul class="cov-tags">
+              <li>SQL injection</li><li>XSS (reflected, stored, DOM)</li><li>SSRF</li><li>IDOR</li>
+              <li>BOLA / BFLA</li><li>Auth bypass</li><li>LFI / RFI</li><li>Upload-to-execution</li>
+              <li>SSTI</li><li>XXE</li><li>Prototype pollution</li><li>GraphQL</li><li>CORS</li>
+              <li>Deserialization</li><li>NoSQLi</li><li>Open redirect</li><li>Mass assignment</li>
+              <li>Host-header injection</li><li>CRLF</li><li>Web-cache poisoning</li>
+              <li>Business logic</li><li>Payment and OAuth flows</li><li>Race conditions</li>
+            </ul>
           </article>
-          <article class="card">
+          <article class="cov-group">
             <h3><span class="card-dot"></span>Infrastructure</h3>
-            <p>
-              Host, port, and service discovery with an nmap NSE consistency floor, rootDSE-confirmed
-              Active Directory testing, security headers, cleartext-auth and weak-crypto hygiene,
-              subdomain takeover, request smuggling, and cloud-storage exposure. Every infrastructure
-              finding carries a rendered exploit-flow diagram.
-            </p>
+            <ul class="cov-tags">
+              <li>Host, port, and service discovery</li><li>nmap NSE floor</li>
+              <li>Active Directory</li><li>Security headers</li><li>Cleartext auth</li>
+              <li>Weak crypto</li><li>Subdomain takeover</li><li>Request smuggling</li>
+              <li>Cloud-storage exposure</li>
+            </ul>
           </article>
-          <article class="card">
+          <article class="cov-group">
             <h3><span class="card-dot"></span>Mobile and desktop</h3>
-            <p>
-              Android and iOS through a managed app agent that drives the app on a paired device, with
-              SSL-pinning and anti-instrumentation handling, plus desktop thick-client and native-app
-              assessment. Both reuse the web authorization and IDOR probers against the backend API the
-              client calls.
-            </p>
+            <ul class="cov-tags">
+              <li>Android</li><li>iOS</li><li>SSL-pinning bypass</li><li>Anti-instrumentation</li>
+              <li>Thick-client</li><li>Native-app</li><li>Backend authorization reuse</li>
+            </ul>
           </article>
-          <article class="card">
+          <article class="cov-group">
             <h3><span class="card-dot"></span>CVE and crypto hygiene</h3>
-            <p>
-              Tech-stack CVE enumeration with an OSV novelty check on recon fingerprints, a
-              non-destructive proof-of-concept safety rubric, and crypto and protocol-hygiene classes:
-              weak crypto and cleartext credential transport.
-            </p>
-          </article>
-          <article class="card">
-            <h3><span class="card-dot"></span>Discovery and intelligence</h3>
-            <p>
-              A recon pipeline over all-Go scanners, passive attack-surface mapping with a 23-rule
-              exposure detector (cloud keys, tokens, private keys, database URLs, and stealer or combo
-              credentials), breach and stealer leak lookup, and a unified threat-intelligence risk score
-              drawing on OTX, LeakCheck, and sector security news.
-            </p>
-          </article>
-          <article class="card">
-            <h3><span class="card-dot"></span>Evidence and standards</h3>
-            <p>
-              Caido is the sole proxy and evidence source: verbatim request and response bytes are
-              re-fetched, never typed by the model. Findings carry OWASP, CWE, and CVSS tags and ship as a
-              bilingual PDF plus SARIF and XLSX, with a captcha solver for Turnstile, reCAPTCHA, and
-              hCaptcha at login.
-            </p>
+            <ul class="cov-tags">
+              <li>Tech-stack CVE enumeration</li><li>OSV novelty check</li>
+              <li>Non-destructive PoC rubric</li><li>Weak crypto</li>
+              <li>Cleartext credential transport</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ADVANTAGES -->
-    <section id="advantages" class="section section-alt">
+    <!-- WHY VACTI -->
+    <section id="why" class="section section-alt">
       <div class="wrap">
         <p class="eyebrow">Why VACTI</p>
-        <h2 class="section-title">Built differently, at the platform level</h2>
+        <h2 class="section-title">Built for teams that answer to auditors</h2>
         <div class="adv-grid">
           <div class="adv">
-            <h3>Self-hosted by design</h3>
+            <h3>Your methodology never leaves your control</h3>
             <p>
-              The control plane and the engine fleet run on infrastructure you control. The knowledge
-              corpus and skill library, the methodology IP, live on the control plane, are fetched per
-              engagement into memory, and are wiped after the run. The shipped engine package holds the
-              runtime, never the IP.
+              The control plane and the engine fleet run on infrastructure you own. The knowledge corpus
+              and skill library, the methodology itself, stay on the control plane, are fetched per
+              engagement into memory, and are wiped after the run. The shipped engine holds the runtime,
+              never the intellectual property.
             </p>
           </div>
           <div class="adv">
-            <h3>Oracle-gated, not guesswork</h3>
+            <h3>Proven, not guessed</h3>
             <p>
-              Every high-impact finding is gated by a class-specific confirmation oracle with a
-              re-executed proof. A finding that cannot be proven is marked inconclusive and flagged for
-              review rather than silently dropped, so model guesses do not reach your report as findings.
-              Quality over coverage.
+              Every high-impact finding passes a class-specific confirmation oracle with a re-executed
+              proof. A finding that cannot be proven is marked inconclusive and flagged for review rather
+              than silently dropped, so model guesses never reach your report as findings.
             </p>
           </div>
           <div class="adv">
-            <h3>One data plane</h3>
+            <h3>One data plane, one risk score</h3>
             <p>
               VA scans, pentest findings, bug-bounty submissions, CTF challenges, leak intelligence, and
-              threat feeds live in one PostgreSQL schema, with a cross-engagement asset catalog and a
-              unified vulnerability-assessment and threat-intelligence risk score shared across the
-              dashboard and reports.
+              threat feeds live in one schema, with a cross-engagement asset catalog and a single risk
+              score shared across the dashboard and every report.
             </p>
           </div>
           <div class="adv">
-            <h3>Evidence-grade, standards-aligned</h3>
+            <h3>Evidence you can hand to an auditor</h3>
             <p>
-              Verbatim Caido request and response exhibits, screenshots, re-executed proofs, and
-              exploit-flow diagrams, tagged with OWASP, CWE, and CVSS, delivered as a bilingual PDF with
-              SARIF and XLSX exports in a formal, bank-grade report layout.
+              Verbatim request and response exhibits, screenshots, re-executed proofs, and exploit-flow
+              diagrams, tagged with OWASP, CWE, and CVSS, delivered as a bilingual PDF with SARIF and
+              XLSX exports in a formal, bank-grade report layout.
             </p>
           </div>
           <div class="adv">
-            <h3>Fleet-ready and multi-arch</h3>
+            <h3>Deploy anywhere, update everywhere</h3>
             <p>
-              Engines enroll with a one-time token and self-update from a private apt repo on an
-              idle-gated timer, so a fleet stays current without a manual redeploy. The engine ships for
-              both amd64 and arm64, with a Docker image for non-Kali hosts.
+              The engine runs on any Linux host, whether bare metal, a virtual machine, or a container.
+              Engines enroll with a one-time token and self-update on an idle-gated timer, so a whole
+              fleet stays current without a manual redeploy.
             </p>
           </div>
           <div class="adv">
-            <h3>Broad platform support</h3>
+            <h3>Lightweight by design</h3>
             <p>
-              Run the engine on Debian 13 trixie or Kali, in Docker, or from a prebuilt appliance:
-              cloud qcow2, installable ISO, and VMware or VirtualBox OVA, all built from one golden image
-              with no baked secret.
+              The control plane is three lean services running end to end in TypeScript, with no Redis
+              and no Celery. You get multi-project workspaces, server-side RBAC, an encrypted key vault,
+              audit logging, and a typed REST API out of the box.
             </p>
           </div>
         </div>
@@ -313,7 +325,7 @@
           engine reaches out to pull authorized engagements and write back results. There is no inbound
           port on an engine.
         </p>
-        <div class="diagram" role="img" aria-label="VACTI architecture, three tiers. The top tier holds operator surfaces: dashboard, engagement console, reports as PDF, SARIF and XLSX, and leaks with threat intelligence. The middle tier is the self-hosted control plane vacti: a typed REST API, a vulnerability-assessment recon worker, a pentest orchestrator and writeback, and a knowledge corpus with a private apt repo, all over a single PostgreSQL data plane. The bottom tier is the engine fleet of vacti-pentest-engine instances, each running a Claude swarm, a deterministic prober with a QA-verifier, a Caido proxy, and an arsenal with Playwright. Engines enroll and poll the control plane and write findings and evidence back outbound only, and reach the in-scope targets through the Caido proxy.">
+        <div class="diagram" role="img" aria-label="VACTI architecture, three tiers. The top tier holds operator surfaces: dashboard, engagement console, reports as PDF, SARIF and XLSX, and leaks with threat intelligence. The middle tier is the self-hosted control plane: a typed REST API, a vulnerability-assessment recon worker, a pentest orchestrator and writeback, and a knowledge corpus, all over a single PostgreSQL data plane. The bottom tier is the engine fleet, each instance running an agent swarm, a deterministic prober with a QA-verifier, a proxy, and an arsenal. Engines enroll and poll the control plane and write findings and evidence back outbound only, and reach the in-scope targets through the proxy.">
           <svg viewBox="0 0 1000 690" preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="gBand" x1="0" y1="0" x2="0" y2="1">
@@ -381,14 +393,14 @@
             </g>
             <rect x="40" y="212" width="6" height="176" rx="3" fill="url(#gAccent)"/>
             <text x="64" y="240" class="d-band">Control plane</text>
-            <text x="194" y="240" class="d-bandsub">vacti</text>
+            <text x="194" y="240" class="d-bandsub">self-hosted</text>
 
             <!-- B chips -->
             <g transform="translate(64,256)">
               <rect width="150" height="60" rx="12" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.4"/>
               <g class="d-ico" transform="translate(16,17)"><path d="M7 2L2 10l5 8M15 2l5 8-5 8"/></g>
               <text x="44" y="30" class="d-chip">REST API</text>
-              <text x="44" y="44" class="d-chipsub">Hono + Zod</text>
+              <text x="44" y="44" class="d-chipsub">typed</text>
             </g>
             <g transform="translate(230,256)">
               <rect width="150" height="60" rx="12" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.4"/>
@@ -406,7 +418,7 @@
               <rect width="150" height="60" rx="12" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.4"/>
               <g class="d-ico" transform="translate(16,14)"><path d="M3 2h12a2 2 0 012 2v16l-8-4-8 4V4a2 2 0 012-2z"/></g>
               <text x="42" y="27" class="d-chip">Knowledge</text>
-              <text x="42" y="41" class="d-chipsub">corpus + apt</text>
+              <text x="42" y="41" class="d-chipsub">corpus</text>
             </g>
 
             <!-- Postgres foundation bar -->
@@ -435,24 +447,24 @@
             </g>
             <rect x="40" y="430" width="6" height="220" rx="3" fill="url(#gAccent)"/>
             <text x="64" y="458" class="d-band">Engine fleet</text>
-            <text x="172" y="458" class="d-bandsub">vacti-pentest-engine</text>
+            <text x="172" y="458" class="d-bandsub">outbound only</text>
 
             <!-- engine instance 1 -->
             <g transform="translate(64,476)">
               <rect width="300" height="152" rx="14" fill="url(#gEngine)" stroke="#CFDCF2" stroke-width="1.5"/>
               <text x="18" y="30" class="d-chip">engine instance</text>
-              <text x="18" y="46" class="d-chipsub">Kali / Debian / Docker</text>
+              <text x="18" y="46" class="d-chipsub">any Linux host</text>
               <g transform="translate(18,60)">
-                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">Claude swarm</text>
+                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">agent swarm</text>
               </g>
               <g transform="translate(154,60)">
                 <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">prober + verifier</text>
               </g>
               <g transform="translate(18,102)">
-                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">Caido proxy</text>
+                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">capture proxy</text>
               </g>
               <g transform="translate(154,102)">
-                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">arsenal + Playwright</text>
+                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">arsenal + browser</text>
               </g>
             </g>
 
@@ -462,13 +474,13 @@
               <text x="18" y="30" class="d-chip">engine instance</text>
               <text x="18" y="46" class="d-chipsub">enrolls with a one-time token</text>
               <g transform="translate(18,60)">
-                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">Claude swarm</text>
+                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">agent swarm</text>
               </g>
               <g transform="translate(154,60)">
                 <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">prober + verifier</text>
               </g>
               <g transform="translate(18,102)">
-                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">Caido proxy</text>
+                <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">capture proxy</text>
               </g>
               <g transform="translate(154,102)">
                 <rect width="128" height="34" rx="9" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/><text x="14" y="22" class="d-mini">self-update timer</text>
@@ -492,51 +504,17 @@
             <!-- engine -> targets -->
             <line x1="680" y1="552" x2="760" y2="552" stroke="#64748B" stroke-width="1.8" marker-end="url(#arrowSlate)"/>
             <g transform="translate(720,536)">
-              <rect x="-50" y="-11" width="100" height="22" rx="11" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/>
-              <text x="0" y="4" text-anchor="middle" class="d-edge">via Caido</text>
+              <rect x="-54" y="-11" width="108" height="22" rx="11" fill="#FFFFFF" stroke="#DCE5F4" stroke-width="1.2"/>
+              <text x="0" y="4" text-anchor="middle" class="d-edge">via proxy</text>
             </g>
           </svg>
         </div>
         <p class="diagram-note">
           Engines enroll once with a single-use token that is exchanged for scoped producer, verifier,
           and gatekeeper tokens. From then on they poll for authorized jobs and write findings and
-          evidence back over the outbound link, routing all test traffic through Caido, its sole proxy
-          and evidence source. The methodology and knowledge corpus stay on the control plane.
+          evidence back over the outbound link, routing all test traffic through the capture proxy, their
+          sole evidence source. The methodology and knowledge corpus stay on the control plane.
         </p>
-      </div>
-    </section>
-
-    <!-- REPOSITORIES -->
-    <section id="repos" class="section section-alt">
-      <div class="wrap">
-        <p class="eyebrow">Repositories</p>
-        <h2 class="section-title">The codebase</h2>
-        <p class="section-lead">
-          VACTI is a self-hosted platform spread across a small set of repositories, cleanly separated
-          by concern.
-        </p>
-        <div class="repos">
-          <a class="repo" href="https://github.com/anggipradana/vacti">
-            <div class="repo-head"><span class="repo-name">vacti</span><span class="repo-arrow" aria-hidden="true">-&gt;</span></div>
-            <p class="repo-desc">Control plane. An Nx TypeScript monorepo: the console, a typed REST API, the data plane, reports, engine distribution, and the knowledge corpus.</p>
-            <p class="repo-tag">TypeScript / Next.js / Hono</p>
-          </a>
-          <a class="repo" href="https://github.com/anggipradana/vacti-pentest-engine">
-            <div class="repo-head"><span class="repo-name">vacti-pentest-engine</span><span class="repo-arrow" aria-hidden="true">-&gt;</span></div>
-            <p class="repo-desc">Offensive runtime. An agent swarm plus an MCP tool arsenal and oracle-gated probers, shipped as a minified Debian package.</p>
-            <p class="repo-tag">TypeScript / Node 22 / .deb</p>
-          </a>
-          <a class="repo" href="https://github.com/anggipradana/vacti-distro">
-            <div class="repo-head"><span class="repo-name">vacti-distro</span><span class="repo-arrow" aria-hidden="true">-&gt;</span></div>
-            <p class="repo-desc">Debian 13 build sources for the VACTI appliance: cloud image, installable ISO, and VM appliances, with the engine pre-provisioned.</p>
-            <p class="repo-tag">Debian 13 / live-build</p>
-          </a>
-          <a class="repo" href="https://github.com/anggipradana/vacti-profile">
-            <div class="repo-head"><span class="repo-name">vacti-profile</span><span class="repo-arrow" aria-hidden="true">-&gt;</span></div>
-            <p class="repo-desc">This profile site. A static, zero-build page describing how VACTI works and why it is built the way it is.</p>
-            <p class="repo-tag">HTML / CSS / static</p>
-          </a>
-        </div>
       </div>
     </section>
   </main>
@@ -548,13 +526,10 @@
         <span>VACTI</span>
       </div>
       <p class="footer-note">
-        Self-hosted AI pentest, vulnerability assessment, and threat intelligence. Only ever run
-        against authorized targets.
+        Autonomous offensive security, self-hosted. Penetration testing, vulnerability assessment, and
+        threat intelligence, only ever run against authorized targets.
       </p>
-      <p class="footer-meta">
-        Built for authorized security testing.
-        <a href="https://github.com/anggipradana/vacti">GitHub</a>
-      </p>
+      <p class="footer-meta">Built for authorized security testing.</p>
     </div>
   </footer>
 </body>
