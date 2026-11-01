@@ -189,7 +189,7 @@
           Candidates appear as captured; the proof is right there.
         </p>
 
-        <div class="console" role="img" aria-label="A mock assessment console. On the left, an assessment feed of four finding cards: SQL injection, high severity, confirmed; SSRF, high severity, confirmed; IDOR, medium severity, confirmed; and Upload to execution, medium severity, pending. Each card shows a one line captured request or response and a timestamp. On the right, the SQL injection finding is opened to an evidence pane showing a captured request block, a captured response block with a verbatim database error, a browser screenshot thumbnail of the rendered error page re-fetched from the proxy, a Caido proxy-flow chip, and a green oracle verdict of confirmed.">
+        <div class="console" role="img" aria-label="Assessment feed with four finding cards on the left and the SQL injection evidence pane on the right.">
           <div class="console-bar">
             <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="console-title">assessment feed</span>
@@ -253,7 +253,7 @@ ERROR: invalid input syntax for type integer:
               <div class="ev-block">
                 <span class="ev-label">Screenshot</span>
                 <figure class="shot">
-                  <img src="assets/evidence-dvwa-sqli.jpg" alt="VACTI engine capture of a SQL injection on a DVWA lab target, UNION SELECT returning the user and password table" />
+                  <img src="assets/evidence-dvwa-sqli.png" alt="VACTI engine capture of a SQL injection on a DVWA lab target, UNION SELECT returning the user and password table" width="640" height="444" loading="lazy" />
                   <figcaption class="shot-cap">
                     <span>actual VACTI engine capture, DVWA lab target</span>
                     <time class="ts">2026-10-31 08:14:02Z</time>
@@ -282,36 +282,32 @@ ERROR: invalid input syntax for type integer:
           <article class="cov-group">
             <h3>Web and API</h3>
             <ul class="cov-tags">
-              <li>SQL injection</li><li>XSS (reflected, stored, DOM)</li><li>SSRF</li><li>IDOR</li>
-              <li>BOLA / BFLA</li><li>Auth bypass</li><li>LFI / RFI</li><li>Upload-to-execution</li>
-              <li>SSTI</li><li>XXE</li><li>Prototype pollution</li><li>GraphQL</li><li>CORS</li>
-              <li>Deserialization</li><li>NoSQLi</li><li>Open redirect</li><li>Mass assignment</li>
-              <li>Host-header injection</li><li>CRLF</li><li>Web-cache poisoning</li>
-              <li>Business logic</li><li>Payment and OAuth flows</li><li>Race conditions</li>
+              <li>SQLi</li><li>XSS</li><li>SSRF</li><li>IDOR</li><li>BOLA / BFLA</li>
+              <li>Auth bypass</li><li>LFI / RFI</li><li>Upload-to-execution</li>
+              <li>SSTI</li><li>XXE</li><li>GraphQL</li><li>Deserialization</li>
+              <li>Business logic</li><li>Race conditions</li>
             </ul>
           </article>
           <article class="cov-group">
             <h3>Infrastructure</h3>
             <ul class="cov-tags">
-              <li>Host and service discovery</li><li>nmap NSE floor</li>
-              <li>Active Directory</li><li>Security headers</li><li>Cleartext auth</li>
-              <li>Weak crypto</li><li>Subdomain takeover</li><li>Request smuggling</li>
+              <li>Service discovery</li><li>Active Directory</li>
+              <li>Subdomain takeover</li><li>Request smuggling</li>
               <li>Cloud-storage exposure</li>
             </ul>
           </article>
           <article class="cov-group">
             <h3>Mobile and desktop</h3>
             <ul class="cov-tags">
-              <li>Android</li><li>iOS</li><li>SSL-pinning bypass</li><li>Anti-instrumentation</li>
-              <li>Thick-client</li><li>Native-app</li><li>Backend authz reuse</li>
+              <li>Android</li><li>iOS</li><li>SSL-pinning bypass</li>
+              <li>Thick-client</li><li>Backend authz reuse</li>
             </ul>
           </article>
           <article class="cov-group">
-            <h3>CVE and crypto hygiene</h3>
+            <h3>CVE and crypto</h3>
             <ul class="cov-tags">
               <li>CVE enumeration</li><li>OSV novelty check</li>
               <li>Non-destructive PoC</li><li>Weak crypto</li>
-              <li>Cleartext transport</li>
             </ul>
           </article>
         </div>
@@ -348,7 +344,7 @@ ERROR: invalid input syntax for type integer:
         <p class="section-lead">
           The control plane orchestrates and stores; the fleet tests outbound-only.
         </p>
-        <div class="diagram" role="img" aria-label="VACTI architecture, three tiers. The top tier holds operator surfaces: dashboard, engagement console, reports as PDF, SARIF and XLSX, and leaks with threat intelligence. The middle tier is the managed control plane: a typed REST API, a vulnerability-assessment recon worker, a pentest orchestrator and writeback, and a knowledge corpus, all over a single PostgreSQL data plane. The bottom tier is the engine fleet, each instance running an agent swarm, a deterministic prober with a QA-verifier, a proxy, and an arsenal. Engines enroll and poll the control plane and write findings and evidence back outbound only, and reach the in-scope targets through the proxy.">
+        <div class="diagram" role="img" aria-label="Three tiers: operator surfaces, managed control plane, engine fleet. Engines write outbound only.">
           <svg viewBox="0 0 1000 690" preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="gBand" x1="0" y1="0" x2="0" y2="1">
