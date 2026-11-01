@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css?v=8" />
 </head>
 <body>
   <a class="skip-link" href="#platform">Skip to content</a>
@@ -372,9 +372,9 @@ ERROR: invalid input syntax for type integer:
     <section id="proof" class="section section-alt proof">
       <div class="wrap">
         <p class="eyebrow">Proof</p>
-        <h2 class="section-title">Proven on real engagements. Zero false positives.</h2>
+        <h2 class="section-title">Proven on real engagements.</h2>
         <p class="section-lead">
-          Where VACTI has run, the numbers held up against the hardest scopes in Indonesia.
+          Where VACTI has run, every finding held up end to end - each one proven by an oracle and re-executed before it shipped.
         </p>
 
         <!-- REDACTED headline -->
@@ -383,7 +383,7 @@ ERROR: invalid input syntax for type integer:
             <span class="proof-rank">2<span class="proof-rank-sfx">nd</span> Place</span>
             <div class="proof-head-meta">
               <h3>REDACTED national bug bounty programme</h3>
-              <p class="proof-head-sub">REDACTED <span class="proof-dot">&#183;</span> government + state-enterprise ecosystem</p>
+              <p class="proof-head-sub">REDACTED <span class="proof-dot">&#183;</span> 2nd Place overall finish</p>
             </div>
           </header>
           <div class="proof-stats" role="list">
@@ -400,51 +400,28 @@ ERROR: invalid input syntax for type integer:
               <span class="pstat-l">high</span>
             </div>
             <div class="pstat" role="listitem">
-              <span class="pstat-n">117</span>
-              <span class="pstat-l">ecosystem subdomains</span>
+              <span class="pstat-n">6</span>
+              <span class="pstat-l">medium</span>
             </div>
             <div class="pstat" role="listitem">
-              <span class="pstat-n">13</span>
-              <span class="pstat-l">state-enterprise surfaces</span>
-            </div>
-            <div class="pstat pstat-zero" role="listitem">
-              <span class="pstat-n">0</span>
-              <span class="pstat-l">false positives</span>
+              <span class="pstat-n">14</span>
+              <span class="pstat-l">low</span>
             </div>
           </div>
           <div class="proof-foot">
-            <p class="proof-cov"><span class="proof-k">Coverage:</span> across dozens of subsystems spanning HR, training, and portal infrastructures.</p>
+            <p class="proof-cov"><span class="proof-k">Coverage:</span> dozens of distinct subsystems and application surfaces exercised end to end in a single engagement.</p>
             <p class="proof-cls"><span class="proof-k">Classes proven:</span> unauth public-API PII, GraphQL bulk-PII (REDACTED records in one query), RCE via unrestricted file upload, mass-assignment privesc to account takeover, JWT alg:none, OAuth / OIDC open-redirect to authz-code theft, IDOR, SQL injection (UNION, file-read, RCE-via-restore).</p>
           </div>
-        </article>
-
-        <!-- Government pentest benchmark -->
-        <article class="proof-card proof-benchmark">
-          <header class="proof-head">
-            <span class="proof-rank proof-rank-blue">0 FP</span>
-            <div class="proof-head-meta">
-              <h3>REDACTED</h3>
-              <p class="proof-head-sub">REDACTED <span class="proof-dot">&#183;</span> REDACTED</p>
-            </div>
-          </header>
-          <div class="proof-h2h" role="list">
-            <div class="h2h" role="listitem">
-              <span class="h2h-tag h2h-tag-ex">Exceeded</span>
-              <h4>Ministry portal (overlapping scope)</h4>
-              <p class="h2h-cap">Caught the top finding (REDACTED) with stronger evidence, plus 4 net-new findings including CSRF-via-GET account deletion. 0 FP.</p>
-            </div>
-            <div class="h2h" role="listitem">
-              <span class="h2h-tag h2h-tag-par">Parity</span>
-              <h4>REDACTED (overlapping scope)</h4>
-              <p class="h2h-cap">Reproduced 7 of 7 human findings and added 4 extras. 0 FP. Correct severity on every material finding.</p>
-            </div>
-            <div class="h2h" role="listitem">
-              <span class="h2h-tag h2h-tag-mat">Matched</span>
-              <h4>Healthcare billing system (overlapping scope)</h4>
-              <p class="h2h-cap">Matched the dominant bug (unauth mass-billing IDOR via record enumeration) with richer evidence, plus reCAPTCHA bypass and 2 extras (leftover source-file leak, unauth payment-relay).</p>
-            </div>
+          <div class="proof-tags" role="list">
+            <span class="ptag" role="listitem">SQL injection</span>
+            <span class="ptag" role="listitem">IDOR</span>
+            <span class="ptag" role="listitem">GraphQL BOLA</span>
+            <span class="ptag" role="listitem">JWT alg:none</span>
+            <span class="ptag" role="listitem">Upload-RCE</span>
+            <span class="ptag" role="listitem">Mass-assignment ATO</span>
+            <span class="ptag" role="listitem">OAuth code theft</span>
+            <span class="ptag" role="listitem">SSRF</span>
           </div>
-          <p class="proof-verdict"><span class="vcall">On overlapping scope, VACTI REDACTED with zero false-positives on accepted findings.</span></p>
         </article>
       </div>
     </section>
@@ -634,7 +611,7 @@ ERROR: invalid input syntax for type integer:
             <div class="mock mock-verdict" aria-hidden="true">
               <span class="vchip">oracle &#10003; confirmed</span>
               <span class="ln ok">request replayed</span>
-              <span class="ln ok">response matched</span>
+              <span class="ln ok">response verified</span>
             </div>
             <h3>Proof, not opinion.</h3>
             <p>Class oracle plus a re-executed proof.</p>
