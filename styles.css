@@ -156,9 +156,16 @@ code {
 }
 .feat-top { display: flex; align-items: center; justify-content: space-between; }
 .feat-num { font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1; color: var(--blue); }
+.feat-pills { display: flex; align-items: center; gap: 6px; }
 .feat-tag {
   font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px;
+}
+.feat-status {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  font-weight: 500; color: var(--verdict);
+  background: rgba(21, 128, 61, 0.1); border: 1px solid rgba(21, 128, 61, 0.35);
+  border-radius: 999px; padding: 4px 10px;
 }
 .feat h3 { font-size: 17px; font-weight: 700; color: var(--navy); margin: 2px 0 0; line-height: 1.25; }
 .feat p { font-size: 14.5px; color: var(--muted); margin: 0; line-height: 1.55; }
