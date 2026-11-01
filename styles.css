@@ -240,8 +240,6 @@ code {
 }
 .shot img {
   display: block; width: 100%; height: auto;
-  aspect-ratio: 16 / 9;
-  max-height: 160px; object-fit: cover; object-position: top center;
   border-bottom: 1px solid #1b3b57;
 }
 .shot-cap {
@@ -474,7 +472,6 @@ code {
   .console-body { grid-template-columns: 1fr; }
   .feed { border-right: none; border-bottom: 1px solid #16324a; }
   .console-mock { display: none; }
-  .shot img { max-height: 130px; }
   .beat { font-size: 22px; }
 }
 @media (max-width: 480px) {
