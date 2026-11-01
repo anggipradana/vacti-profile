@@ -191,7 +191,7 @@
           team opens. Attack traffic, verdict, and evidence live in the same place.
         </p>
 
-        <div class="console" role="img" aria-label="A mock assessment console. On the left, an assessment feed of four finding cards: SQL injection, high severity, confirmed; SSRF, high severity, confirmed; IDOR, medium severity, confirmed; and Upload to execution, medium severity, pending. Each card shows a one line captured request or response and a timestamp. On the right, the SQL injection finding is opened to an evidence pane showing a captured request block, a captured response block with a verbatim database error, and a green oracle verdict of confirmed.">
+        <div class="console" role="img" aria-label="A mock assessment console. On the left, an assessment feed of four finding cards: SQL injection, high severity, confirmed; SSRF, high severity, confirmed; IDOR, medium severity, confirmed; and Upload to execution, medium severity, pending. Each card shows a one line captured request or response and a timestamp. On the right, the SQL injection finding is opened to an evidence pane showing a captured request block, a captured response block with a verbatim database error, a browser screenshot thumbnail of the rendered error page re-fetched from the proxy, a Caido proxy-flow chip, and a green oracle verdict of confirmed.">
           <div class="console-bar">
             <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
             <span class="console-title">assessment feed</span>
@@ -252,6 +252,25 @@ Cookie: session=a7f3...c2</pre>
 ERROR: invalid input syntax for type integer:
 "PostgreSQL 14.9 on x86_64-pc-linux-gnu"</pre>
               </div>
+              <div class="ev-block">
+                <span class="ev-label">Screenshot</span>
+                <figure class="shot">
+                  <div class="shot-bar">
+                    <span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="shot-url">https://app.target.example/product?id=1</span>
+                  </div>
+                  <div class="shot-view">
+                    <p class="shot-code">HTTP 500 Internal Server Error</p>
+                    <p class="shot-err">ERROR: invalid input syntax for type integer:<br />"PostgreSQL 14.9 on x86_64-pc-linux-gnu"</p>
+                    <p class="shot-note">page rendered in the engine browser</p>
+                  </div>
+                  <figcaption class="shot-cap">
+                    <span>browser screenshot, re-fetched from the proxy</span>
+                    <time class="ts">2026-10-31 08:14:02Z</time>
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="flow">caido flow: f_8c3b2a... <span>re-executed from the recorded request</span></p>
               <p class="verdict">oracle verdict: confirmed</p>
             </div>
           </div>
