@@ -283,7 +283,15 @@ code {
 .footer-brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; letter-spacing: 0.12em; }
 .footer-brand img { filter: brightness(0) invert(1); }
 .footer-note { margin: 0; font-size: 15px; color: #AFC3D9; max-width: 640px; }
+.footer-note a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.footer-note a:hover { color: var(--blue); }
 .footer-meta { margin: 0; font-size: 14px; color: #8FA8C2; }
+
+/* PARTNERSHIP */
+.partnership-inner { text-align: center; }
+.partnership-inner .eyebrow,
+.partnership-inner .section-lead { margin-left: auto; margin-right: auto; }
+.partnership-inner .section-lead { margin-bottom: 32px; }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
