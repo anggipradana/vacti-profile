@@ -225,25 +225,10 @@ code {
   margin: 0; background: #0B1D2D; border: 1px solid #1b3b57;
   border-radius: 8px; overflow: hidden;
 }
-.shot-bar {
-  display: flex; align-items: center; gap: 10px;
-  padding: 7px 10px; background: #09161f; border-bottom: 1px solid #1b3b57;
+.shot img {
+  display: block; width: 100%; height: auto;
+  border-bottom: 1px solid #1b3b57;
 }
-.shot-dots { display: inline-flex; gap: 5px; flex: none; }
-.shot-dots i { width: 8px; height: 8px; border-radius: 50%; background: #2c4a63; display: block; }
-.shot-url {
-  font-family: var(--mono); font-size: 11px; color: #9fb6cc;
-  background: #0E2436; border: 1px solid #1b3b57; border-radius: 5px;
-  padding: 3px 9px; flex: 1; min-width: 0;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-}
-.shot-view { padding: 16px 14px; background: #10202e; display: grid; gap: 8px; }
-.shot-code { font-family: var(--mono); font-size: 13px; font-weight: 600; color: #fecaca; margin: 0; }
-.shot-err {
-  font-family: var(--mono); font-size: 11px; line-height: 1.5; color: #cfe0f0; margin: 0;
-  border-left: 2px solid rgba(185, 28, 28, 0.5); padding-left: 10px;
-}
-.shot-note { font-size: 11px; color: #6f8aa3; font-style: italic; margin: 0; }
 .shot-cap {
   display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
   font-family: var(--mono); font-size: 11px; color: #9fb6cc;
