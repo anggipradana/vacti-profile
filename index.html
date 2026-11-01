@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
-  <a class="skip-link" href="#problem">Skip to content</a>
+  <a class="skip-link" href="#platform">Skip to content</a>
 
   <header class="nav" id="top">
     <div class="wrap nav-inner">
@@ -28,12 +28,13 @@
         </span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#how">How it works</a>
         <a href="#platform">Platform</a>
-        <a href="#coverage">Coverage</a>
         <a href="#architecture">Architecture</a>
+        <a href="#proof">Proof</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#partners">Partners</a>
       </nav>
-      <a class="btn btn-sm btn-primary" href="#how">See how it works</a>
+      <a class="btn btn-sm btn-primary" href="#partnership">Start an engagement</a>
     </div>
   </header>
 
@@ -48,7 +49,7 @@
             VACTI delivers Vulnerability Assessment, <em>AI Pentest</em>, and Threat Intelligence as one platform. Every finding is a reproduced exploit. Partner via <a href="https://anggipradana.com" target="_blank" rel="noopener">anggipradana.com</a>.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#how">See how it works</a>
+            <a class="btn btn-primary" href="#proof">See the proof</a>
             <a class="btn btn-ghost" href="#platform">See the platform</a>
             <a class="btn btn-ghost" href="https://anggipradana.com" target="_blank" rel="noopener">Start an engagement</a>
           </div>
@@ -109,183 +110,7 @@
       </div>
     </section>
 
-    <!-- PROBLEM BAND -->
-    <section id="problem" class="section section-alt problem">
-      <div class="wrap">
-        <h2 class="problem-thesis">A finding you cannot reproduce is a <em>guess</em>.</h2>
-        <div class="problem-grid">
-          <div class="problem-col">
-            <div class="mock mock-verdict" aria-hidden="true">
-              <span class="vchip">oracle &#10003; confirmed</span>
-              <span class="ln ok">request replayed</span>
-              <span class="ln ok">response matched</span>
-            </div>
-            <h3>Proof, not opinion.</h3>
-            <p>Class oracle plus a re-executed proof.</p>
-          </div>
-          <div class="problem-col">
-            <div class="mock mock-surfaces" aria-hidden="true">
-              <span class="surf on">web</span><span class="surf on">API</span>
-              <span class="surf on">infra</span><span class="surf on">mobile</span>
-              <span class="surf on">desktop</span><span class="surf on">web3</span>
-            </div>
-            <h3>Full coverage, one engine.</h3>
-            <p>One swarm, every surface.</p>
-          </div>
-          <div class="problem-col">
-            <div class="mock mock-engage" aria-hidden="true">
-              <span class="chip">scope set</span><span class="chip">approvals on</span>
-              <span class="chip">outbound only</span>
-            </div>
-            <h3>Delivered as a partnership.</h3>
-            <p>Managed engagement. Your scope, your approvals.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="how" class="section">
-      <div class="wrap">
-        <p class="eyebrow">How it works</p>
-        <h2 class="section-title">Three beats, one disciplined run.</h2>
-        <p class="section-lead">
-          Scope it. Attack it. Prove it.
-        </p>
-        <ol class="steps">
-          <li class="step">
-            <span class="step-num">01</span>
-            <div class="step-mock" aria-hidden="true">
-              <span class="sm-head">inventory</span>
-              <span class="tree">/login<em>POST</em></span>
-              <span class="tree">/api/orders<em>id,q</em></span>
-              <span class="tree">/upload<em>file</em></span>
-              <span class="tree sub">+ 214 routes</span>
-            </div>
-            <div class="step-body">
-              <h3>Scope and recon</h3>
-              <p>You set scope. Recon maps every route into one inventory.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step-num">02</span>
-            <div class="step-mock" aria-hidden="true">
-              <span class="sm-head">arsenal</span>
-              <span class="pchips"><span>SQLi</span><span>XSS</span><span>SSRF</span><span>IDOR</span><span>XXE</span><span>SSTI</span><span>+40</span></span>
-              <span class="sm-run"><i></i>browser + proxy live</span>
-            </div>
-            <div class="step-body">
-              <h3>Autonomous attack</h3>
-              <p>Real browser plus the full arsenal, through a capture proxy.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step-num">03</span>
-            <div class="step-mock" aria-hidden="true">
-              <span class="sm-head">gate</span>
-              <span class="ln ok">prober confirmed</span>
-              <span class="ln ok">verifier reproduced</span>
-              <span class="vchip">oracle &#10003; ship</span>
-            </div>
-            <div class="step-body">
-              <h3>Oracle-gated proof</h3>
-              <p>Prober confirms. Verifier reproduces. Only then does it ship.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- CAPABILITIES -->
-    <section id="capabilities" class="section">
-      <div class="wrap">
-        <p class="eyebrow">Capabilities</p>
-        <h2 class="section-title">What the engine brings to <em>one run</em>.</h2>
-        <p class="section-lead">
-          Attack, proof, and delivery, one run.
-        </p>
-        <svg class="ico-sprite" width="0" height="0" aria-hidden="true" focusable="false">
-          <defs>
-            <symbol id="ic-swarm" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="12" cy="19" r="2.4"/><path d="M7 7l4 10M17 7l-4 10M7 6h10"/></symbol>
-            <symbol id="ic-probe" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L21 21M8 10h4M10 8v4"/></symbol>
-            <symbol id="ic-surfaces" viewBox="0 0 24 24"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></symbol>
-            <symbol id="ic-infra" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></symbol>
-            <symbol id="ic-oracle" viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
-            <symbol id="ic-verify" viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2 6"/><path d="M20 4v5h-5"/></symbol>
-            <symbol id="ic-evidence" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol>
-            <symbol id="ic-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></symbol>
-            <symbol id="ic-managed" viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><rect x="9" y="10" width="6" height="5" rx="1"/><path d="M10 10V8.5a2 2 0 014 0V10"/></symbol>
-            <symbol id="ic-resume" viewBox="0 0 24 24"><path d="M4 12a8 8 0 108-8"/><path d="M4 4v5h5"/><path d="M11 9l4 3-4 3z"/></symbol>
-            <symbol id="ic-writeback" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></symbol>
-            <symbol id="ic-vpn" viewBox="0 0 24 24"><circle cx="12" cy="11" r="8"/><path d="M4 11h16M12 3c3 3 3 13 0 16M12 3c-3 3-3 13 0 16"/></symbol>
-          </defs>
-        </svg>
-        <div class="features-grid">
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-swarm" xlink:href="#ic-swarm"/></svg><span class="feat-num">01</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
-            <h3>Autonomous agent swarm</h3>
-            <p>Real browser plus full arsenal, via the capture proxy.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-probe" xlink:href="#ic-probe"/></svg><span class="feat-num">02</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
-            <h3>Deterministic prober</h3>
-            <p>Model-independent sweep of every route and injection class.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-surfaces" xlink:href="#ic-surfaces"/></svg><span class="feat-num">03</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
-            <h3>Surfaces in one engine</h3>
-            <p>Web, API, infrastructure, mobile, iOS, desktop, source review, CTF, and web3.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-infra" xlink:href="#ic-infra"/></svg><span class="feat-num">04</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
-            <h3>Active Directory and infra</h3>
-            <p>Host, port, service discovery plus rootDSE-confirmed AD.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-oracle" xlink:href="#ic-oracle"/></svg><span class="feat-num">05</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
-            <h3>Confirmation oracles</h3>
-            <p>Ships only when its oracle proves exploitation.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-verify" xlink:href="#ic-verify"/></svg><span class="feat-num">06</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
-            <h3>Verifier and refutation gate</h3>
-            <p>Second pass re-tests every candidate, criticals first.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-evidence" xlink:href="#ic-evidence"/></svg><span class="feat-num">07</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
-            <h3>Verbatim evidence</h3>
-            <p>No ship without a captured request/response pair.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-filter" xlink:href="#ic-filter"/></svg><span class="feat-num">08</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
-            <h3>False-positive tightening</h3>
-            <p>Root-cause dedup, proof-gated severity, before writeback.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-managed" xlink:href="#ic-managed"/></svg><span class="feat-num">09</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
-            <h3>Delivered as a managed engagement</h3>
-            <p>Fleet tests outbound-only, no inbound port.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-resume" xlink:href="#ic-resume"/></svg><span class="feat-num">10</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
-            <h3>Resume and continue</h3>
-            <p>Every cell recorded. Re-queue to go deeper.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-writeback" xlink:href="#ic-writeback"/></svg><span class="feat-num">11</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
-            <h3>Findings and evidence writeback</h3>
-            <p>Verified findings and evidence write back outbound.</p>
-          </article>
-          <article class="feat">
-            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-vpn" xlink:href="#ic-vpn"/></svg><span class="feat-num">12</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
-            <h3>Client-VPN engagements</h3>
-            <p>Self-connects across GlobalProtect, Fortinet, AnyConnect, OpenVPN, WireGuard, and IPsec.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUCT SHOWCASE -->
+    <!-- PLATFORM SHOWCASE -->
     <section id="platform" class="section section-alt">
       <div class="wrap">
         <p class="eyebrow">The platform</p>
@@ -372,75 +197,6 @@ ERROR: invalid input syntax for type integer:
         </div>
 
         <p class="beat"><span>Attack.</span> <span>Prove.</span> <span>Report.</span></p>
-      </div>
-    </section>
-
-    <!-- COVERAGE -->
-    <section id="coverage" class="section">
-      <div class="wrap">
-        <p class="eyebrow">Coverage</p>
-        <h2 class="section-title">The classes we confirm, by domain.</h2>
-        <p class="section-lead">
-          Every class, gated by its own oracle.
-        </p>
-        <div class="cov-matrix-wrap">
-          <div class="cov-matrix" role="table" aria-label="Coverage matrix: vulnerability classes by target surface, filled dot means confirmed by an oracle on that surface.">
-            <div class="cov-row cov-head" role="row">
-              <span class="cov-cls" role="columnheader">Class</span>
-              <span role="columnheader">Web</span><span role="columnheader">API</span>
-              <span role="columnheader">Infra</span><span role="columnheader">Mobile</span><span role="columnheader">Desktop</span>
-            </div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SQL injection</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">XSS</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSRF</span><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">IDOR / BOLA / BFLA</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Auth bypass</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b class="on"></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Upload-to-execution</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSTI / XXE / deserialization</span><b class="on"></b><b class="on"></b><b></b><b></b><b class="on"></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Service discovery</span><b></b><b></b><b class="on"></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Active Directory</span><b></b><b></b><b class="on"></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Subdomain takeover</span><b class="on"></b><b></b><b class="on"></b><b></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSL-pinning bypass</span><b></b><b class="on"></b><b></b><b class="on"></b><b></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Thick-client review</span><b></b><b class="on"></b><b></b><b></b><b class="on"></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">CVE enumeration</span><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></div>
-            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Weak crypto</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b class="on"></b></div>
-          </div>
-          <p class="cov-key"><span class="dot on" aria-hidden="true"></span> confirmed by an oracle on that surface</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY VACTI -->
-    <section id="why" class="section section-alt">
-      <div class="wrap">
-        <p class="eyebrow">Why VACTI</p>
-        <h2 class="section-title">Built for teams that answer to auditors.</h2>
-        <div class="why-grid">
-          <div class="why-card">
-            <span class="why-vis why-check" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#15803D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-            </span>
-            <h3>Proven, not guessed.</h3>
-            <p>Every high-impact finding passes an oracle with a re-executed proof. Unproven leads never ship.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-vis why-merge" aria-hidden="true">
-              <span class="feeds"><em>VA</em><em>pentest</em><em>leaks</em><em>CTI</em></span>
-              <span class="merge-arrow">&#8594;</span>
-              <span class="score">1 risk score</span>
-            </span>
-            <h3>One data plane, one risk score.</h3>
-            <p>VA, pentest, leaks, and CTI, one schema and one risk score.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-vis why-scope" aria-hidden="true">
-              <span class="chip">your engine</span><span class="chip">your scope</span>
-              <span class="chip">your approvals</span><span class="chip">corpus wiped</span>
-            </span>
-            <h3>Partnership-grade, your scope.</h3>
-            <p>Our engine, your scope and approvals. Corpus loads per run, wipes after.</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -612,10 +368,367 @@ ERROR: invalid input syntax for type integer:
       </div>
     </section>
 
-    <!-- PARTNERSHIP -->
-    <section id="partnership" class="section section-alt partnership">
+    <!-- PROOF -->
+    <section id="proof" class="section section-alt proof">
+      <div class="wrap">
+        <p class="eyebrow">Proof</p>
+        <h2 class="section-title">Proven on real engagements. Zero false positives.</h2>
+        <p class="section-lead">
+          Where VACTI has run, the numbers held up against the hardest scopes in Indonesia.
+        </p>
+
+        <!-- REDACTED headline -->
+        <article class="proof-card proof-headline">
+          <header class="proof-head">
+            <span class="proof-rank">2<span class="proof-rank-sfx">nd</span> Place</span>
+            <div class="proof-head-meta">
+              <h3>REDACTED national bug bounty programme</h3>
+              <p class="proof-head-sub">REDACTED <span class="proof-dot">&#183;</span> government + state-enterprise ecosystem</p>
+            </div>
+          </header>
+          <div class="proof-stats" role="list">
+            <div class="pstat" role="listitem">
+              <span class="pstat-n">138</span>
+              <span class="pstat-l">real findings</span>
+            </div>
+            <div class="pstat pstat-crit" role="listitem">
+              <span class="pstat-n">89</span>
+              <span class="pstat-l">critical</span>
+            </div>
+            <div class="pstat" role="listitem">
+              <span class="pstat-n">24</span>
+              <span class="pstat-l">high</span>
+            </div>
+            <div class="pstat" role="listitem">
+              <span class="pstat-n">117</span>
+              <span class="pstat-l">ecosystem subdomains</span>
+            </div>
+            <div class="pstat" role="listitem">
+              <span class="pstat-n">13</span>
+              <span class="pstat-l">state-enterprise surfaces</span>
+            </div>
+            <div class="pstat pstat-zero" role="listitem">
+              <span class="pstat-n">0</span>
+              <span class="pstat-l">false positives</span>
+            </div>
+          </div>
+          <div class="proof-foot">
+            <p class="proof-cov"><span class="proof-k">Coverage:</span> across dozens of subsystems spanning HR, training, and portal infrastructures.</p>
+            <p class="proof-cls"><span class="proof-k">Classes proven:</span> unauth public-API PII, GraphQL bulk-PII (REDACTED records in one query), RCE via unrestricted file upload, mass-assignment privesc to account takeover, JWT alg:none, OAuth / OIDC open-redirect to authz-code theft, IDOR, SQL injection (UNION, file-read, RCE-via-restore).</p>
+          </div>
+        </article>
+
+        <!-- Government pentest benchmark -->
+        <article class="proof-card proof-benchmark">
+          <header class="proof-head">
+            <span class="proof-rank proof-rank-blue">0 FP</span>
+            <div class="proof-head-meta">
+              <h3>REDACTED</h3>
+              <p class="proof-head-sub">REDACTED <span class="proof-dot">&#183;</span> REDACTED</p>
+            </div>
+          </header>
+          <div class="proof-h2h" role="list">
+            <div class="h2h" role="listitem">
+              <span class="h2h-tag h2h-tag-ex">Exceeded</span>
+              <h4>Ministry portal (overlapping scope)</h4>
+              <p class="h2h-cap">Caught the top finding (REDACTED) with stronger evidence, plus 4 net-new findings including CSRF-via-GET account deletion. 0 FP.</p>
+            </div>
+            <div class="h2h" role="listitem">
+              <span class="h2h-tag h2h-tag-par">Parity</span>
+              <h4>REDACTED (overlapping scope)</h4>
+              <p class="h2h-cap">Reproduced 7 of 7 human findings and added 4 extras. 0 FP. Correct severity on every material finding.</p>
+            </div>
+            <div class="h2h" role="listitem">
+              <span class="h2h-tag h2h-tag-mat">Matched</span>
+              <h4>Healthcare billing system (overlapping scope)</h4>
+              <p class="h2h-cap">Matched the dominant bug (unauth mass-billing IDOR via record enumeration) with richer evidence, plus reCAPTCHA bypass and 2 extras (leftover source-file leak, unauth payment-relay).</p>
+            </div>
+          </div>
+          <p class="proof-verdict"><span class="vcall">On overlapping scope, VACTI REDACTED with zero false-positives on accepted findings.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="section">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section-title">Three beats, one disciplined run.</h2>
+        <p class="section-lead">
+          Scope it. Attack it. Prove it.
+        </p>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <div class="step-mock" aria-hidden="true">
+              <span class="sm-head">inventory</span>
+              <span class="tree">/login<em>POST</em></span>
+              <span class="tree">/api/orders<em>id,q</em></span>
+              <span class="tree">/upload<em>file</em></span>
+              <span class="tree sub">+ 214 routes</span>
+            </div>
+            <div class="step-body">
+              <h3>Scope and recon</h3>
+              <p>You set scope. Recon maps every route into one inventory.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <div class="step-mock" aria-hidden="true">
+              <span class="sm-head">arsenal</span>
+              <span class="pchips"><span>SQLi</span><span>XSS</span><span>SSRF</span><span>IDOR</span><span>XXE</span><span>SSTI</span><span>+40</span></span>
+              <span class="sm-run"><i></i>browser + proxy live</span>
+            </div>
+            <div class="step-body">
+              <h3>Autonomous attack</h3>
+              <p>Real browser plus the full arsenal, through a capture proxy.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <div class="step-mock" aria-hidden="true">
+              <span class="sm-head">gate</span>
+              <span class="ln ok">prober confirmed</span>
+              <span class="ln ok">verifier reproduced</span>
+              <span class="vchip">oracle &#10003; ship</span>
+            </div>
+            <div class="step-body">
+              <h3>Oracle-gated proof</h3>
+              <p>Prober confirms. Verifier reproduces. Only then does it ship.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow">Capabilities</p>
+        <h2 class="section-title">What the engine brings to <em>one run</em>.</h2>
+        <p class="section-lead">
+          Attack, proof, and delivery, one run.
+        </p>
+        <svg class="ico-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+          <defs>
+            <symbol id="ic-swarm" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2.4"/><circle cx="19" cy="6" r="2.4"/><circle cx="12" cy="19" r="2.4"/><path d="M7 7l4 10M17 7l-4 10M7 6h10"/></symbol>
+            <symbol id="ic-probe" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L21 21M8 10h4M10 8v4"/></symbol>
+            <symbol id="ic-surfaces" viewBox="0 0 24 24"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></symbol>
+            <symbol id="ic-infra" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></symbol>
+            <symbol id="ic-oracle" viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+            <symbol id="ic-verify" viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2 6"/><path d="M20 4v5h-5"/></symbol>
+            <symbol id="ic-evidence" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol>
+            <symbol id="ic-filter" viewBox="0 0 24 24"><path d="M3 5h18l-7 8v6l-4-2v-4z"/></symbol>
+            <symbol id="ic-managed" viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><rect x="9" y="10" width="6" height="5" rx="1"/><path d="M10 10V8.5a2 2 0 014 0V10"/></symbol>
+            <symbol id="ic-resume" viewBox="0 0 24 24"><path d="M4 12a8 8 0 108-8"/><path d="M4 4v5h5"/><path d="M11 9l4 3-4 3z"/></symbol>
+            <symbol id="ic-writeback" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></symbol>
+            <symbol id="ic-vpn" viewBox="0 0 24 24"><circle cx="12" cy="11" r="8"/><path d="M4 11h16M12 3c3 3 3 13 0 16M12 3c-3 3-3 13 0 16"/></symbol>
+          </defs>
+        </svg>
+        <div class="features-grid">
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-swarm" xlink:href="#ic-swarm"/></svg><span class="feat-num">01</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
+            <h3>Autonomous agent swarm</h3>
+            <p>Real browser plus full arsenal, via the capture proxy.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-probe" xlink:href="#ic-probe"/></svg><span class="feat-num">02</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
+            <h3>Deterministic prober</h3>
+            <p>Model-independent sweep of every route and injection class.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-surfaces" xlink:href="#ic-surfaces"/></svg><span class="feat-num">03</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
+            <h3>Surfaces in one engine</h3>
+            <p>Web, API, infrastructure, mobile, iOS, desktop, source review, CTF, and web3.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-infra" xlink:href="#ic-infra"/></svg><span class="feat-num">04</span></span><span class="feat-pills"><span class="feat-tag">Attack</span><span class="feat-status">Live</span></span></div>
+            <h3>Active Directory and infra</h3>
+            <p>Host, port, service discovery plus rootDSE-confirmed AD.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-oracle" xlink:href="#ic-oracle"/></svg><span class="feat-num">05</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
+            <h3>Confirmation oracles</h3>
+            <p>Ships only when its oracle proves exploitation.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-verify" xlink:href="#ic-verify"/></svg><span class="feat-num">06</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
+            <h3>Verifier and refutation gate</h3>
+            <p>Second pass re-tests every candidate, criticals first.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-evidence" xlink:href="#ic-evidence"/></svg><span class="feat-num">07</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
+            <h3>Verbatim evidence</h3>
+            <p>No ship without a captured request/response pair.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-filter" xlink:href="#ic-filter"/></svg><span class="feat-num">08</span></span><span class="feat-pills"><span class="feat-tag">Proof</span><span class="feat-status">Live</span></span></div>
+            <h3>False-positive tightening</h3>
+            <p>Root-cause dedup, proof-gated severity, before writeback.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-managed" xlink:href="#ic-managed"/></svg><span class="feat-num">09</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
+            <h3>Delivered as a managed engagement</h3>
+            <p>Fleet tests outbound-only, no inbound port.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-resume" xlink:href="#ic-resume"/></svg><span class="feat-num">10</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
+            <h3>Resume and continue</h3>
+            <p>Every cell recorded. Re-queue to go deeper.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-writeback" xlink:href="#ic-writeback"/></svg><span class="feat-num">11</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
+            <h3>Findings and evidence writeback</h3>
+            <p>Verified findings and evidence write back outbound.</p>
+          </article>
+          <article class="feat">
+            <div class="feat-top"><span class="feat-id"><svg class="feat-ico"><use href="#ic-vpn" xlink:href="#ic-vpn"/></svg><span class="feat-num">12</span></span><span class="feat-pills"><span class="feat-tag">Delivery</span><span class="feat-status">Live</span></span></div>
+            <h3>Client-VPN engagements</h3>
+            <p>Self-connects across GlobalProtect, Fortinet, AnyConnect, OpenVPN, WireGuard, and IPsec.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COVERAGE -->
+    <section id="coverage" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Coverage</p>
+        <h2 class="section-title">The classes we confirm, by domain.</h2>
+        <p class="section-lead">
+          Every class, gated by its own oracle.
+        </p>
+        <div class="cov-matrix-wrap">
+          <div class="cov-matrix" role="table" aria-label="Coverage matrix: vulnerability classes by target surface, filled dot means confirmed by an oracle on that surface.">
+            <div class="cov-row cov-head" role="row">
+              <span class="cov-cls" role="columnheader">Class</span>
+              <span role="columnheader">Web</span><span role="columnheader">API</span>
+              <span role="columnheader">Infra</span><span role="columnheader">Mobile</span><span role="columnheader">Desktop</span>
+            </div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SQL injection</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">XSS</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSRF</span><b class="on"></b><b class="on"></b><b class="on"></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">IDOR / BOLA / BFLA</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Auth bypass</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b class="on"></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Upload-to-execution</span><b class="on"></b><b class="on"></b><b></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSTI / XXE / deserialization</span><b class="on"></b><b class="on"></b><b></b><b></b><b class="on"></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Service discovery</span><b></b><b></b><b class="on"></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Active Directory</span><b></b><b></b><b class="on"></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Subdomain takeover</span><b class="on"></b><b></b><b class="on"></b><b></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">SSL-pinning bypass</span><b></b><b class="on"></b><b></b><b class="on"></b><b></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Thick-client review</span><b></b><b class="on"></b><b></b><b></b><b class="on"></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">CVE enumeration</span><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b><b class="on"></b></div>
+            <div class="cov-row" role="row"><span class="cov-cls" role="rowheader">Weak crypto</span><b class="on"></b><b class="on"></b><b></b><b class="on"></b><b class="on"></b></div>
+          </div>
+          <p class="cov-key"><span class="dot on" aria-hidden="true"></span> confirmed by an oracle on that surface</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM BAND -->
+    <section id="problem" class="section section-alt problem">
+      <div class="wrap">
+        <h2 class="problem-thesis">A finding you cannot reproduce is a <em>guess</em>.</h2>
+        <div class="problem-grid">
+          <div class="problem-col">
+            <div class="mock mock-verdict" aria-hidden="true">
+              <span class="vchip">oracle &#10003; confirmed</span>
+              <span class="ln ok">request replayed</span>
+              <span class="ln ok">response matched</span>
+            </div>
+            <h3>Proof, not opinion.</h3>
+            <p>Class oracle plus a re-executed proof.</p>
+          </div>
+          <div class="problem-col">
+            <div class="mock mock-surfaces" aria-hidden="true">
+              <span class="surf on">web</span><span class="surf on">API</span>
+              <span class="surf on">infra</span><span class="surf on">mobile</span>
+              <span class="surf on">desktop</span><span class="surf on">web3</span>
+            </div>
+            <h3>Full coverage, one engine.</h3>
+            <p>One swarm, every surface.</p>
+          </div>
+          <div class="problem-col">
+            <div class="mock mock-engage" aria-hidden="true">
+              <span class="chip">scope set</span><span class="chip">approvals on</span>
+              <span class="chip">outbound only</span>
+            </div>
+            <h3>Delivered as a partnership.</h3>
+            <p>Managed engagement. Your scope, your approvals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY VACTI -->
+    <section id="why" class="section">
+      <div class="wrap">
+        <p class="eyebrow">Why VACTI</p>
+        <h2 class="section-title">Built for teams that answer to auditors.</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-vis why-check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#15803D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+            </span>
+            <h3>Proven, not guessed.</h3>
+            <p>Every high-impact finding passes an oracle with a re-executed proof. Unproven leads never ship.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-vis why-merge" aria-hidden="true">
+              <span class="feeds"><em>VA</em><em>pentest</em><em>leaks</em><em>CTI</em></span>
+              <span class="merge-arrow">&#8594;</span>
+              <span class="score">1 risk score</span>
+            </span>
+            <h3>One data plane, one risk score.</h3>
+            <p>VA, pentest, leaks, and CTI, one schema and one risk score.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-vis why-scope" aria-hidden="true">
+              <span class="chip">your engine</span><span class="chip">your scope</span>
+              <span class="chip">your approvals</span><span class="chip">corpus wiped</span>
+            </span>
+            <h3>Partnership-grade, your scope.</h3>
+            <p>Our engine, your scope and approvals. Corpus loads per run, wipes after.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section id="partners" class="section section-alt">
+      <div class="wrap">
+        <p class="eyebrow">Partners</p>
+        <h2 class="section-title">Delivered with Indonesian cyber-community partners.</h2>
+        <p class="section-lead">
+          Trusted operators who extend VACTI into the field.
+        </p>
+        <div class="partners-grid">
+          <a class="partner-logo" href="https://orangsiber.com" target="_blank" rel="noopener">
+            <span class="partner-logo-img">
+              <img src="assets/partner-orangsiber.jpg" alt="Orang Siber Indonesia" width="260" height="100" loading="lazy" />
+            </span>
+            <span class="partner-logo-cap">
+              <span class="partner-name">Orang Siber Indonesia</span>
+              <span class="partner-url">orangsiber.com</span>
+            </span>
+          </a>
+          <a class="partner-logo" href="https://siberku.com" target="_blank" rel="noopener">
+            <span class="partner-logo-img">
+              <img src="assets/partner-siberku.png" alt="Siberku" width="260" height="75" loading="lazy" />
+            </span>
+            <span class="partner-logo-cap">
+              <span class="partner-name">Siberku</span>
+              <span class="partner-url">siberku.com</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP CTA -->
+    <section id="partnership" class="section partnership">
       <div class="wrap partnership-inner">
-        <p class="eyebrow">Partnership</p>
+        <p class="eyebrow">Engagement</p>
         <h2 class="section-title">Partner on an engagement.</h2>
         <div class="partner-card">
           <div class="partner-badge">
