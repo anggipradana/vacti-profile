@@ -65,7 +65,15 @@ code {
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--navy); }
+.brand-text { display: flex; flex-direction: column; gap: 3px; line-height: 1; }
 .brand-word { font-weight: 800; letter-spacing: 0.14em; font-size: 18px; color: var(--navy); }
+.brand-tag {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);
+  white-space: nowrap;
+}
+.brand-tag i { font-style: normal; color: #C3CEDC; padding: 0 1px; }
+.brand-tag b { font-weight: 600; color: var(--blue); }
 .nav-links { display: flex; gap: 26px; }
 .nav-links a { color: var(--muted); font-weight: 500; font-size: 15px; }
 .nav-links a:hover { color: var(--navy); }
@@ -112,6 +120,8 @@ code {
 }
 .hero-title em { font-style: italic; color: var(--blue); }
 .hero-sub { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 0 34px; }
+.hero-sub em { font-style: italic; font-weight: 600; color: var(--blue); }
+.hero-sub a { font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0; }
 
 /* SECTIONS */
@@ -129,6 +139,40 @@ code {
 }
 .section-title em { font-style: italic; color: var(--blue); }
 .section-lead { font-size: 18px; color: var(--muted); max-width: 680px; margin: 0 0 48px; }
+
+/* 3-PILLAR STRIP */
+.pillars { background: var(--bg); border-bottom: 1px solid var(--line); padding: 46px 0; }
+.pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.pillar {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 22px 22px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.pillar-top { display: flex; align-items: center; justify-content: space-between; }
+.pillar-ico {
+  width: 36px; height: 36px; flex: none;
+  stroke: var(--blue); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+  background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.22);
+  border-radius: 9px; padding: 6px;
+}
+.pillar-chip {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px;
+}
+.pillar h2 {
+  font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.1;
+  letter-spacing: -0.01em; color: var(--navy); margin: 4px 0 0;
+}
+.pillar p { font-size: 15px; color: var(--muted); margin: 0; line-height: 1.55; }
+.pillar-lead {
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 1px rgba(37,99,235,0.18), 0 14px 36px rgba(37,99,235,0.14);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3F7FF 100%);
+  padding: 26px 24px 28px; margin-top: -8px;
+}
+.pillar-lead h2 { color: var(--blue); font-style: italic; font-size: 30px; }
+.pillar-lead .pillar-ico { background: rgba(37,99,235,0.14); border-color: rgba(37,99,235,0.42); }
+.pillar-lead .pillar-chip { color: var(--blue); border-color: rgba(37,99,235,0.42); background: rgba(37,99,235,0.06); }
 
 /* PROBLEM BAND */
 .problem-thesis {
@@ -294,6 +338,7 @@ code {
 .footer-brand { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; letter-spacing: 0.12em; }
 .footer-brand img { filter: brightness(0) invert(1); }
 .footer-note { margin: 0; font-size: 15px; color: #AFC3D9; max-width: 640px; }
+.footer-note em { font-style: italic; font-weight: 600; color: #fff; }
 .footer-note a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
 .footer-note a:hover { color: var(--blue); }
 .footer-meta { margin: 0; font-size: 14px; color: #8FA8C2; }
@@ -453,6 +498,7 @@ code {
   .hero-inner { grid-template-columns: 1fr; gap: 36px; }
   .hero-mock { max-width: 460px; }
   .hero-title { max-width: 18ch; }
+  .brand-tag { display: none; }
 }
 @media (max-width: 760px) {
   body { font-size: 16px; }
@@ -462,6 +508,8 @@ code {
   .section { padding: 60px 0; }
   .hero-inner { padding: 64px 16px 56px; }
   .hero-title { font-size: clamp(34px, 9vw, 60px); }
+  .pillars-grid { grid-template-columns: 1fr; gap: 16px; }
+  .pillar-lead { margin-top: 0; }
   .problem-grid { grid-template-columns: 1fr; gap: 24px; }
   .steps { grid-template-columns: 1fr; gap: 28px; }
   .features-grid { grid-template-columns: 1fr; }
