@@ -1,73 +1,55 @@
-# vacti-profile
+# Vacti
 
-The public profile site for **VACTI**, an autonomous AI penetration testing platform.
+**Vacti is an AI-driven autonomous penetration-testing platform.** It runs real security
+assessments the way a skilled human tester would — but continuously, consistently, and with every
+finding proven before it is reported. It is built for security teams, consultancies and
+organisations that need more testing than their people can deliver by hand, and who cannot afford
+to spend analyst time sorting a report full of false positives.
 
-It is a single, static, zero-build HTML page that explains how VACTI works and why it is
-built the way it is: a Debian or Kali engine that enrolls to a self-hosted control plane,
-runs an agent swarm behind deterministic probers and confirmation oracles, and writes back
-verifiable, evidence-grade findings.
+This repository holds the source of the public product site at **[vacti.org](https://vacti.org)**.
 
-## What is in here
+## What Vacti does
+
+- **Autonomous assessment.** Point it at an authorised target and it does the work: discovery,
+  enumeration, hypothesis and exploitation — across web, mobile, network and cloud surfaces.
+- **Proof, not possibility.** A finding is only reported once it has been demonstrated against the
+  live target. No "may be vulnerable" entries.
+- **One view of your risk.** Findings, exposure and breach intelligence roll into a single risk
+  score, so a board or a client gets one number instead of five dashboards.
+- **Built for professional delivery.** Reports are evidence-grade and ready to hand to a client or
+  an auditor.
+
+## Where it runs
+
+Vacti is **self-hosted**. You run the control plane on infrastructure you control, and engines run
+on appliances you also control. Nothing about your targets or your findings leaves your
+environment. Engines reach out to your control plane; they never open an inbound port.
+
+You can try it as a **managed engagement** with our team, or deploy it as a **partnership** inside
+your own delivery practice.
+
+## This repository
+
+The site is a single static page with no build step and no runtime dependency.
 
 ```text
-index.html                     the whole page (hero, how it works, capabilities,
-                               advantages, architecture, open source, footer)
-styles.css                     the white + blue design system
-assets/logo.svg                VACTI shield + radar wordmark logo
-assets/icon.svg                square app / favicon mark
-.github/workflows/deploy.yml   GitHub Pages deploy on push to main
-.nojekyll                      tells GitHub Pages to serve files as-is
+index.html                     the whole page
+styles.css                     the design system (white + blue)
+assets/                        logo, icon, and supporting imagery
+.github/workflows/deploy.yml   publishes the site on every push to main
 ```
 
-There is no build step and no runtime dependency. Fonts (Inter and JetBrains Mono) are the
-only external request, loaded from Google Fonts.
+To preview locally, serve the directory with any static file server (`python3 -m http.server 8080`)
+and open <http://localhost:8080>.
 
-## Run it locally
+## Documentation
 
-Any static file server works. For example:
+Full product documentation — installation, administration, the user guide, and the architecture
+overview — is at **[docs.vacti.org](https://docs.vacti.org)**.
 
-```bash
-# Python (no install)
-python3 -m http.server 8080
-
-# or Node
-npx serve .
-```
-
-Then open <http://localhost:8080>.
-
-## Deploy
-
-The site is plain static files, so it hosts anywhere.
-
-### GitHub Pages (included)
-
-A workflow at `.github/workflows/deploy.yml` publishes the site on every push to `main`.
-After the first push:
-
-1. Open the repository **Settings -> Pages**.
-2. Set **Source** to **GitHub Actions**.
-3. Push to `main`. The site deploys to `https://<owner>.github.io/<repo>/`.
-
-The `.nojekyll` file keeps Pages from reprocessing the output.
-
-### Cloudflare Pages / Netlify
-
-Point the provider at this repository and leave the build command empty:
-
-- **Build command:** (none)
-- **Output directory:** `/` (the repository root)
-
-## Customize
-
-- **Colors:** the design tokens live at the top of `styles.css` under `:root`
-  (navy `#0A3D62`, blue `#2563EB`, off-white `#F7F9FC`). Change them in one place.
-- **Copy:** all text is in `index.html`, grouped by section with clear comments.
-- **Logo:** swap `assets/logo.svg` and `assets/icon.svg`. Both are plain SVG.
-- **Links:** repository URLs live in the Open source section and the nav.
-
-## License
+## Licence
 
 MIT. See [LICENSE](LICENSE).
 
-Only ever run VACTI against targets you are authorized to test.
+Vacti is for authorised security testing only. Only ever test systems you have written permission
+to test.
